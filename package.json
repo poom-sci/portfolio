@@ -28,7 +28,7 @@
     "@segment/snippet": "^4.14.2",
     "axios": "0.21.4",
     "emailjs-com": "^3.2.0",
-    "firebase": "^8.8.1",
+    "firebase": "9.4.0",
     "firebase-admin": "^9.11.0",
     "firebase-functions": "^3.14.1",
     "google-maps-react": "^2.0.6",
