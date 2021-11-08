@@ -1,0 +1,18 @@
+.RegisterForm {
+  margin: 20px;
+  /* background-color: 'white'; */
+}
+.grid1 {
+  flex-direction: row;
+}
+
+@media (max-width: 500px) {
+  .RegisterForm {
+    margin: 20px;
+    background-color: 'white';
+  }
+
+  .grid1 {
+    flex-direction: column;
+  }
+}

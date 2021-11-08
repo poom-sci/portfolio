@@ -1,0 +1,21 @@
+.Content {
+  /* background-color: #262626; */
+  /* position: fixed; */
+  margin-top: 68px;
+  width: 70%;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 10px 15px rgb(199, 199, 199);
+  /* padding-bottom: 20px; */
+}
+
+@media (max-width: 500px) {
+  .Content {
+    margin: 0 auto;
+    margin-top: 68px;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 0 10px 15px rgb(199, 199, 199);
+    /* padding-bottom: 20px; */
+  }
+}
