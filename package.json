@@ -25,7 +25,7 @@
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@mui/icons-material": "^5.0.5",
     "@mui/material": "^5.0.6",
-    "@segment/snippet": "^4.14.2",
+    "@segment/snippet": "4.15.3",
     "axios": "0.21.4",
     "emailjs-com": "^3.2.0",
     "firebase": "^8.8.1",
