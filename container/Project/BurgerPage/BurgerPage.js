@@ -1,6 +1,6 @@
 // import Head from 'next/head';
 // import Image from 'next/image';
-// import Link from 'next/link';
+import Link from 'next/link';
 // import { useRouter } from 'next/router';
 // import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
@@ -34,7 +34,17 @@ export default function BurgerPage(props) {
         <br />• deploy on firebase
         <br />
         <br />
-        MORE INFO COMING SOON!
+        <h4>Find Out More Info Here</h4>
+        <div>
+          <Link href="https://web-app-1-f4f1d.web.app/">
+            <div className={classes.link}>Website</div>
+          </Link>
+        </div>
+        <div>
+          <Link href="https://github.com/poom-sci/web-app-1">
+            <div className={classes.link}>Github</div>
+          </Link>
+        </div>
       </Typography>
 
       {/* <Divider variant="middle" light /> */}

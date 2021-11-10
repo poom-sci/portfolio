@@ -1,16 +1,7 @@
 {
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/aboutMe": "pages/aboutMe.html",
-  "/api/texts": "pages/api/texts.js",
-  "/contact": "pages/contact.html",
-  "/": "pages/index.html",
-  "/project/burgerApp": "pages/project/burgerApp.html",
-  "/project/clockDrawing": "pages/project/clockDrawing.html",
-  "/project/depressionApp": "pages/project/depressionApp.html",
-  "/project/nlp": "pages/project/nlp.html",
-  "/project/pomelo": "pages/project/pomelo.html",
-  "/project/treason": "pages/project/treason.html",
   "/_error": "pages/_error.js",
-  "/404": "pages/404.html"
+  "/project/nlp": "pages/project/nlp.js",
+  "/": "pages/index.js"
 }

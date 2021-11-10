@@ -21,11 +21,11 @@ function ProductCards(props) {
               <Typography
                 align="center"
                 className={classes.cardTitle}
-                style={{ color: 'black', textShadow: '2px 2px white' }}
+                style={{ color: 'black' }}
                 variant="h4"
                 component="h3"
               >
-                Sentimental Analysis
+                Natural Language Processing
               </Typography>
               <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bert-and-ernie-gettyimages-1039579634.jpg?crop=1.00xw:0.754xh;0,0.0440xh&resize=480:*" />
             </Paper>

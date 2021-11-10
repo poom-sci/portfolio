@@ -1,0 +1,15 @@
+.youtubePlayer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 500px;
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+}
+.link:hover {
+  opacity: 0.6;
+}

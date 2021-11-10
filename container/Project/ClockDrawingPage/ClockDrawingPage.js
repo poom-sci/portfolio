@@ -1,6 +1,6 @@
 // import Head from 'next/head';
 // import Image from 'next/image';
-// import Link from 'next/link';
+import Link from 'next/link';
 // import { useRouter } from 'next/router';
 // import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
@@ -33,11 +33,18 @@ export default function ClockDrawingPage(props) {
         <br />• scikit-learn
         <br />
         <br />
-        MORE INFO COMING SOON!
+        <h4>Find Out More Info Here</h4>
+        <div>
+          <Link href="https://colab.research.google.com/drive/1yZadaFgGfwtolJe6iX-CfOzqWjOzvCLe?usp=sharing">
+            <div className={classes.link}>Colab</div>
+          </Link>
+        </div>
+        <div>
+          <Link href="https://drive.google.com/file/d/15l7oLo7vDqPTueU-sRqVJYdVldz0OcGu/view">
+            <div className={classes.link}>Document</div>
+          </Link>
+        </div>
       </Typography>
-      {/* <Divider variant="middle" light /> */}
-      {/* <ImageSlider /> */}
-      {/* <ProjectCards /> */}
     </div>
   );
 }
