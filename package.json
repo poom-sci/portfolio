@@ -29,7 +29,7 @@
     "axios": "0.21.4",
     "emailjs-com": "^3.2.0",
     "firebase": "^8.8.1",
-    "firebase-admin": "^9.11.0",
+    "firebase-admin": "10.0.0",
     "firebase-functions": "^3.14.1",
     "google-maps-react": "^2.0.6",
     "halogen": "^0.2.0",
