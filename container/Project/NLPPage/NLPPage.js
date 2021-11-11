@@ -178,7 +178,7 @@ export default function NLPPage(props) {
 
       <Divider style={{ margin: '30px 50px' }} />
       <div className={classes.textChooseSection}>
-        <h3 style={{ margin: '20px' }}>พื้นที่สำหรับการช่วยให้คแะนนข้อมูล ว่าเป็นแง่ +/0/- </h3>
+        <h3 style={{ margin: '20px' }}>พื้นที่สำหรับการช่วยให้คแะนนข้อมูล ว่าเป็นแง่ ดี/กลาง/ร้าย </h3>
         <div style={{ margin: '20px' }}>จำนวนข้อที่ทั้งหมด : {data.length}</div>
         <div style={{ margin: '20px' }}>ข้อที่ทำอยู่ : {textIndex}</div>
         <Button

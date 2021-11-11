@@ -10,7 +10,7 @@ function ProductCards(props) {
     <div className={classes.container}>
       <div className={classes.title}>
         <Typography style={{ fontWeight: 700, marginTop: '20px' }} variant="h4" component="h2">
-          My Experinces
+          My Experiences
         </Typography>
       </div>
 

@@ -10,7 +10,7 @@ import AboutUsPage from '../container/AboutUsPage/AboutUsPage';
 import Meta from '../container/Function/Meta';
 
 class AboutUs extends Component {
-  state = { ip: null };
+  // state = { ip: null };
 
   constructor(props) {
     super(props);
