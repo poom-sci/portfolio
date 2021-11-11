@@ -3,7 +3,7 @@ import Head from 'next/head';
 // import Link from 'next/link';
 // import { useRouter } from 'next/router';
 // import axios from '../axios-orders';
-import axios from 'axios';
+// import axios from 'axios';
 
 import Homepage from '../container/Homepage/Homepage';
 import Meta from '../container/Function/Meta';
