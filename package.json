@@ -1,7 +1,7 @@
 {
   "main": "server.js",
   "engines": {
-    "node": "16"
+    "node": "14"
   },
   "name": "nexttest",
   "version": "0.1.0",
