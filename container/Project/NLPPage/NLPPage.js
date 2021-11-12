@@ -96,7 +96,6 @@ export default function NLPPage(props) {
         alt_text="homepage_cover_image"
         title="Natural Language Processing"
       />
-
       <div className={classes.NLPSection}>
         <img
           className={classes.NLPSectionTopicImage}
@@ -175,8 +174,8 @@ export default function NLPPage(props) {
           </div>
         </Grid>
       </div>
-
-      <Divider style={{ margin: '30px 50px' }} />
+      <Divider style={{ padding: '30px 50px', backgroundColor: 'white' }} />
+      {/*
       <div className={classes.textChooseSection}>
         <h3 style={{ margin: '20px' }}>พื้นที่สำหรับการช่วยให้คแะนนข้อมูล ว่าเป็นแง่ ดี/กลาง/ร้าย </h3>
         <div style={{ margin: '20px' }}>จำนวนข้อที่ทั้งหมด : {data.length}</div>
@@ -299,8 +298,7 @@ export default function NLPPage(props) {
             Send Data
           </Button>
         </Stack>
-      </div>
-
+      </div> */}
       {/* <Divider variant="middle" light /> */}
       {/* <ImageSlider /> */}
       {/* <ProjectCards /> */}

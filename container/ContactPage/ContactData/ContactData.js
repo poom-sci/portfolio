@@ -7,6 +7,9 @@ import withErrorHandler from '../../../hoc/withErrorHandler/withErrorHandler';
 
 import ContactDataForm from './ContactDataForm/ContactDataForm';
 
+import Alert from '@mui/material/Alert';
+import AlertTitle from '@mui/material/AlertTitle';
+
 import emailjs from 'emailjs-com';
 
 class ContactData extends Component {
@@ -14,12 +17,13 @@ class ContactData extends Component {
     formIsValid: false,
     sending: false,
     success: false,
+    failed: false,
   };
 
   orderHandler = (event) => {
     event.preventDefault();
 
-    this.setState({ sending: true });
+    this.setState({ sending: true, failed: false, success: false });
 
     const form = event.target;
     const firstname = form.firstname.value;
@@ -55,7 +59,7 @@ class ContactData extends Component {
         this.setState({ sending: false, success: true });
       })
       .catch((err) => {
-        this.setState({ sending: false });
+        this.setState({ sending: false, failed: true });
       });
   };
 
@@ -69,16 +73,23 @@ class ContactData extends Component {
       form = <Spinner />;
     }
 
-    let success = null;
-    if (this.state.success) {
-      success = <p>SENDING SUCCESS</p>;
-    }
-
     return (
       <div className={classes.ContactData}>
-        <h4>Get in touch with us</h4>
+        <h4>Tell Me Something</h4>
+        {this.state.success ? (
+          <Alert severity="success" sx={{ textAlign: 'left' }}>
+            <AlertTitle>Send Email Complete Success</AlertTitle>
+            Wait me a bit to reply you back — <strong>I have also CC email to you.</strong>
+          </Alert>
+        ) : null}
+        {this.state.failed ? (
+          <Alert severity="error" sx={{ textAlign: 'left' }}>
+            <AlertTitle>Send Email Complete</AlertTitle>
+            Something is broken — <strong>retry again sometimes later</strong>
+          </Alert>
+        ) : null}
+
         {form}
-        {success}
       </div>
     );
   }
