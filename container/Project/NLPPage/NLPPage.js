@@ -104,14 +104,14 @@ export default function NLPPage(props) {
           }
         />
         <h3 className={classes.NLPSectionTitle}>Developed Machine Learning Model with HuggingFace</h3>
-        <Grid container spacing={2} sx={{ padding: '20px' }} justifyContent="center" alignItems="center">
+        <Grid container spacing={2} sx={{ padding: '20px' }} justifyContent="center" alignItems="stretch">
           <Grid item xs={12} md={6}>
-            <Card sx={{ margin: '0 auto', height: 300 }}>
+            <Card sx={{ margin: '0 auto', height: '100%' }}>
               <CardMedia
                 component="img"
                 height="140"
                 image="https://miro.medium.com/max/2400/1*XAHtR9rKv8SJ4ESELxm2iQ.png"
-                alt="green iguana"
+                alt="WangchanBERTa image"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -124,7 +124,7 @@ export default function NLPPage(props) {
                   </Link>
                 </Typography>
               </CardContent>
-              <CardActions>
+              <CardActions sx={{ justifySelf: 'flex-end' }}>
                 <Link href="https://huggingface.co/poom-sci/WangchanBERTa-finetuned-sentiment">
                   <Button size="small">Go to model</Button>
                 </Link>
@@ -132,14 +132,14 @@ export default function NLPPage(props) {
             </Card>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Card sx={{ margin: '0 auto', height: 300 }}>
+            <Card sx={{ margin: '0 auto', height: '100%', display: 'flex', flexDirection: 'column' }}>
               <CardMedia
                 component="img"
                 height="140"
                 image="https://res.cloudinary.com/practicaldev/image/fetch/s--ozy733MJ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/q5e65ugnue96bir3usyk.png"
-                alt="green iguana"
+                alt="BERT image"
               />
-              <CardContent>
+              <CardContent sx={{ flex: 1 }}>
                 <Typography gutterBottom variant="h5" component="div">
                   English Sentimental Model
                 </Typography>
@@ -150,14 +150,41 @@ export default function NLPPage(props) {
                   </Link>
                 </Typography>
               </CardContent>
-              <CardActions>
+              <CardActions sx={{}}>
                 <Link href="https://huggingface.co/poom-sci/bert-base-uncased-multi-emotion">
                   <Button size="small">Go to model</Button>
                 </Link>
               </CardActions>
             </Card>
           </Grid>
+          <Grid item xs={12} md={6}>
+            <Card sx={{ margin: '0 auto' }}>
+              <CardMedia
+                component="img"
+                height="140"
+                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKqFjQ9vfok5_8sYSYkHH0vhmFC9usPQi5iQ&usqp=CAU"
+                alt="question answer model image"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  English Question and Answering
+                </Typography>
+                <Typography variant="body" color="text.primary">
+                  Developed model poom-sci/distiled-bert-qa from&nbsp;
+                  <Link href="https://huggingface.co/bert-base-uncased">
+                    <div className={classes.link}>distilbert-base-uncased</div>
+                  </Link>
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Link href="https://huggingface.co/poom-sci/distilbert-qa">
+                  <Button size="small">Go to model</Button>
+                </Link>
+              </CardActions>
+            </Card>
+          </Grid>
         </Grid>
+
         <Grid item xs={12} md={12}>
           <div className={classes.MoreInfo}>
             <h4>Find Out More Info Here</h4>
