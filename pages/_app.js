@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import '../styles/globals.css';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
@@ -8,14 +9,22 @@ import thunk from 'redux-thunk';
 // import { useRouter } from 'next/router';
 import { StylesProvider } from '@material-ui/core/styles';
 
-import Layout from '../hoc/Layout/Layout';
-import authReducer from '../store/reducers/auth';
 import Head from 'next/head';
 // import firebaseAnalytic from '../container/Function/FirebaseAnalytic';
 // import TagManager from 'react-gtm-module';
 // import Spinner from '../components/UI/Spinner/Spinner';
 // import { CacheProvider, ClassNames } from '@emotion/react';
 // import createCache from '@emotion/cache';
+
+// ---------------------DYNAMIC IMPORT--------------------------
+
+// import Layout from '../hoc/Layout/Layout';
+const Layout = dynamic(() => import('../hoc/Layout/Layout'));
+
+// import authReducer from '../store/reducers/auth';
+const authReducer = dynamic(() => import('../store/reducers/auth'));
+
+// --------------------------------------------------------------
 
 const composeEnhancers =
   (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
@@ -75,18 +84,10 @@ function MyApp({ Component, pageProps }) {
           <Head>
             <title>Poom Suchao-in</title>
           </Head>
-          {/* <Spinner /> */}
           <Layout>
-            {/* {pageLoading ? (
-              <div style={{ height: '1000px' }}>
-                <Spinner />
-              </div>
-            ) : ( */}
             <Component {...pageProps} />
-            {/* )} */}
           </Layout>
         </React.StrictMode>
-        {/* </CacheProvider> */}
       </StylesProvider>
     </Provider>
   );
