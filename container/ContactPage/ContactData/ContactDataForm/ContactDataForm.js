@@ -3,7 +3,6 @@ import React from 'react';
 import classes from './RegisterForm.module.css';
 
 import Button from '@material-ui/core/Button';
-
 import TextField from '@material-ui/core/TextField';
 
 import { withStyles } from '@material-ui/core/styles';
@@ -14,17 +13,32 @@ const CssTextField = withStyles({
     '& label.Mui-focused': {
       color: '#fcc652',
     },
+    // '& .MuiInput-underline:before': {
+    // borderBottom: '2px solid green',
+    // },
     // "& .MuiInput-underline:after": {
     //   borderBottomColor: "yellow",
     // },
-    '& .MuiOutlinedInput-root': {
+    '& .MuiInputBase-input': {
+      color: '#fcc652', // Text color
+    },
+    '& .MuiInput-underline:before': {
+      // borderBottomColor: '#fcc652', // Semi-transparent underline
+    },
+    '& .MuiInput-underline:hover:before': {
+      borderBottomColor: '#fcc652a0', // Solid underline on hover
+    },
+    '& .MuiInput-underline:after': {
+      borderBottomColor: '#fcc652', // Solid underline on focus
+    },
+    '& .MuiInput-root': {
       // "& fieldset": {
-      //   borderColor: "white",
+      borderColor: 'white',
       // },
       // "&:hover fieldset": {
       //   borderColor: "white",
       // },
-      '&.Mui-focused fieldset': {
+      '&.Mui-focused': {
         borderColor: '#fcc652',
         color: '#fcc652',
         // backgroundColor:'black'
@@ -53,7 +67,7 @@ export default function ContactDataForm(props) {
               id="firstname"
               type="text"
               label="First name"
-              variant="outlined"
+              // variant="outlined"
               InputProps={{
                 inputProps: {},
                 style: {
@@ -69,7 +83,7 @@ export default function ContactDataForm(props) {
               id="lastname"
               type="text"
               label="Last Name"
-              variant="outlined"
+              // variant="outlined"
               InputProps={{
                 inputProps: {},
                 style: {
@@ -93,7 +107,7 @@ export default function ContactDataForm(props) {
               id="phone"
               type="tel"
               label="Your Number"
-              variant="outlined"
+              // variant="outlined"
               InputProps={{
                 inputProps: { minLength: 9, maxLength: 10 },
                 style: {
@@ -117,7 +131,7 @@ export default function ContactDataForm(props) {
               id="email"
               type="email"
               label="Your Email"
-              variant="outlined"
+              // variant="outlined"
               InputProps={{
                 style: {
                   fontFamily: '"Kanit", sans-serif',
@@ -142,7 +156,7 @@ export default function ContactDataForm(props) {
               id="message"
               type="text"
               label="Enter your message"
-              variant="outlined"
+              // variant="outlined"
               InputProps={{
                 inputProps: {},
                 style: {
