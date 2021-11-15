@@ -19,7 +19,7 @@ const emailjs = dynamic(() => import('emailjs-com'));
 const ContactDataForm = dynamic(() => import('./ContactDataForm/ContactDataForm'), {
   return: (
     <Skeleton variant="rectangular" width="100%">
-      <div style={{ paddingTop: '400px' }} />
+      <div style={{ height: '400px' }} />
     </Skeleton>
   ),
 });
