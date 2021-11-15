@@ -7,7 +7,7 @@ import thunk from 'redux-thunk';
 // import { createTheme } from '@material-ui/core/styles';
 // import { ThemeProvider } from '@material-ui/styles';
 // import { useRouter } from 'next/router';
-
+import { StylesProvider } from '@material-ui/core/styles';
 import Head from 'next/head';
 // import firebaseAnalytic from '../container/Function/FirebaseAnalytic';
 // import TagManager from 'react-gtm-module';
@@ -22,8 +22,6 @@ const Layout = dynamic(() => import('../hoc/Layout/Layout'));
 
 // import authReducer from '../store/reducers/auth';
 const authReducer = dynamic(() => import('../store/reducers/auth'));
-
-import { StylesProvider } from '@material-ui/core/styles';
 
 // --------------------------------------------------------------
 
