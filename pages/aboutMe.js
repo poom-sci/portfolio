@@ -27,7 +27,7 @@ class AboutUs extends Component {
             description="Poom Suchao-in: portfolio website Get to know more about me"
           />
         </Head>
-        <TopicImage coverImage="/cover/about-us-cover.jpg" alt_text="about_us_cover_image" title="About Us" />
+        <TopicImage coverImage="/cover/about-us-cover.jpg" alt_text="about_us_cover_image" title="About Me" />
         <Information />
       </div>
     );

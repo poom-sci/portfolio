@@ -5,8 +5,14 @@ import Head from 'next/head';
 // import axios from '../axios-orders';
 // import axios from 'axios';
 
-import Homepage from '../container/Homepage/Homepage';
+import dynamic from 'next/dynamic';
 import Meta from '../container/Function/Meta';
+
+import { Divider } from '@material-ui/core';
+
+import ProjectCards from '../container/Homepage/ProjectCards/ProjectCards';
+
+const TopicImage = dynamic(() => import('../components/UI/TopicImage/TopicImage'));
 
 function Home() {
   console.log('Homepage');
@@ -22,7 +28,10 @@ function Home() {
         />
       </Head>
 
-      <Homepage />
+      <TopicImage coverImage="/cover/homepage-cover.jpg" alt_text="homepage_cover_image" title="Homepage" />
+      <Divider variant="middle" light />
+      {/* <ImageSlider /> */}
+      <ProjectCards />
     </div>
   );
 }

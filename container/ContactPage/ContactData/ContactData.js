@@ -5,12 +5,18 @@ import Spinner from '../../../components/UI/Spinner/Spinner';
 import axios from '../../../axios-orders';
 import withErrorHandler from '../../../hoc/withErrorHandler/withErrorHandler';
 
-import ContactDataForm from './ContactDataForm/ContactDataForm';
+// import ContactDataForm from './ContactDataForm/ContactDataForm';
 
 import Alert from '@mui/material/Alert';
 import AlertTitle from '@mui/material/AlertTitle';
 
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
+
+import dynamic from 'next/dynamic';
+
+const emailjs = dynamic(() => import('emailjs-com'));
+
+const ContactDataForm = dynamic(() => import('./ContactDataForm/ContactDataForm'));
 
 class ContactData extends Component {
   state = {

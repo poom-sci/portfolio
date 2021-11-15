@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 
 import classes from './Layout.module.css';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
 import Footer from '../../components/Navigation/Footer/Footer';
-import Container from '@material-ui/core/Container';
+// import Container from '@material-ui/core/Container';
 
 // const FacebookMessenger = dynamic(() => import('../../components/FacebookPlugin/FacebookMessenger'));
 
