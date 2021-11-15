@@ -5,6 +5,7 @@ import Head from 'next/head';
 
 // import ContactPage from '../container/ContactPage/ContactPage';
 import ContactData from '../container/ContactPage/ContactData/ContactData';
+import Classes from '../container/ContactPage/ContactPage.module.css';
 import Meta from '../container/Function/Meta';
 
 import dynamic from 'next/dynamic';
@@ -12,7 +13,7 @@ const TopicImage = dynamic(() => import('../components/UI/TopicImage/TopicImage'
 
 export default function Contact() {
   return (
-    <div>
+    <div className={Classes.container}>
       <Head>
         <title>Poom Suchao-in: Contact Me</title>
         <Meta
