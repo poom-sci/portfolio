@@ -1,25 +1,23 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-
+// import Image from 'next/image';
+// import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { Component } from 'react';
-
-import { useRouter } from 'next/router';
-
-import AboutUsPage from '../container/AboutUsPage/AboutUsPage';
 import Meta from '../container/Function/Meta';
 
-class AboutUs extends Component {
-  // state = { ip: null };
+import styles from '../container/AboutUsPage/AboutUsPage.module.css';
+import Information from '../container/AboutUsPage/Information/Information';
 
+const TopicImage = dynamic(() => import('../components/UI/TopicImage/TopicImage'));
+
+class AboutUs extends Component {
   constructor(props) {
     super(props);
-    // this.router = useRouter();
   }
 
   render() {
     return (
-      <div>
+      <div className={styles.container}>
         <Head>
           <title>Poom Suchao-in: About Me</title>
           <Meta
@@ -29,7 +27,8 @@ class AboutUs extends Component {
             description="Poom Suchao-in: portfolio website Get to know more about me"
           />
         </Head>
-        <AboutUsPage />
+        <TopicImage coverImage="/cover/about-us-cover.jpg" alt_text="about_us_cover_image" title="About Us" />
+        <Information />
       </div>
     );
   }

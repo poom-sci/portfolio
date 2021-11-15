@@ -8,7 +8,7 @@ import Head from 'next/head';
 import Homepage from '../container/Homepage/Homepage';
 import Meta from '../container/Function/Meta';
 
-function Home(props) {
+function Home() {
   console.log('Homepage');
   return (
     <div>
