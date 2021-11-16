@@ -44,14 +44,6 @@ class ContactData extends Component {
     const email = form.email.value;
     const message = form.message.value;
 
-    // const formData = {
-    // firstname: firstname,
-    // lastname: lastname,
-    // phone: phone,
-    // email: email,
-    // message: message,
-    // };
-
     const template_params = {
       from_fname: firstname,
       from_lname: lastname,

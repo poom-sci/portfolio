@@ -12,14 +12,16 @@ const navigationItems = (props) => {
     { name: 'Home', link: '/' },
     { name: 'AboutMe', link: '/aboutMe' },
     { name: 'Contact', link: '/contact' },
+    { name: 'Login', link: '/authen' },
   ];
 
   if (props.isAuthenticated) {
     data = [
       { name: 'Home', link: '/' },
-      { name: 'Reserve', link: '/reserve' },
+
       { name: 'AboutMe', link: '/aboutMe' },
       { name: 'Contact', link: '/contact' },
+      { name: 'Logout', link: '/authen' },
     ];
   }
 
@@ -31,7 +33,12 @@ const navigationItems = (props) => {
             {/* <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
             </ListItemIcon> */}
-            <NavigationItem link={element.link} exact onClick={props.onClick}>
+            <NavigationItem
+              link={element.link}
+              exact
+              onClick={props.onClick}
+              style={{ whiteSpace: 'nowrap' }}
+            >
               {/* <ListItemText /> */}
               {element.name}
             </NavigationItem>

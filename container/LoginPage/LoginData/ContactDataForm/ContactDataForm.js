@@ -20,7 +20,7 @@ const CssTextField = withStyles({
     //   borderBottomColor: "yellow",
     // },
     '& .MuiInputBase-input': {
-      color: '#fcc652', // Text color
+      // color: '#fcc652', // Text color
     },
     '& .MuiInput-underline:before': {
       // borderBottomColor: '#fcc652', // Semi-transparent underline
@@ -52,72 +52,6 @@ export default function ContactDataForm(props) {
     <div className={classes.RegisterForm}>
       <Grid>
         <Grid
-          className={classes.grid1}
-          style={{
-            marginBottom: '10px',
-          }}
-          container
-          spacing={3}
-          // justifyContent="space-evenly"
-        >
-          <Grid item xs={12} sm={6}>
-            <CssTextField
-              required
-              fullWidth
-              id="firstname"
-              type="text"
-              label="First name"
-              // variant="outlined"
-              InputProps={{
-                inputProps: {},
-                style: {
-                  fontFamily: '"Kanit", sans-serif',
-                },
-              }}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <CssTextField
-              required
-              fullWidth
-              id="lastname"
-              type="text"
-              label="Last Name"
-              // variant="outlined"
-              InputProps={{
-                inputProps: {},
-                style: {
-                  fontFamily: '"Kanit", sans-serif',
-                },
-              }}
-            />
-          </Grid>
-        </Grid>
-        <Grid
-          diection="row"
-          spacing={3}
-          container
-          justifyContent="space-evenly"
-          style={{ marginBottom: '10px' }}
-        >
-          <Grid item xs={12}>
-            <CssTextField
-              required
-              fullWidth
-              id="phone"
-              type="tel"
-              label="Your Number"
-              // variant="outlined"
-              InputProps={{
-                inputProps: { minLength: 9, maxLength: 10 },
-                style: {
-                  fontFamily: '"Kanit", sans-serif',
-                },
-              }}
-            />
-          </Grid>
-        </Grid>
-        <Grid
           diection="row"
           spacing={3}
           container
@@ -130,7 +64,7 @@ export default function ContactDataForm(props) {
               fullWidth
               id="email"
               type="email"
-              label="Your Email"
+              label="Your Number"
               // variant="outlined"
               InputProps={{
                 style: {
@@ -151,14 +85,11 @@ export default function ContactDataForm(props) {
             <CssTextField
               required
               fullWidth
-              multiline
-              rows={10}
-              id="message"
-              type="text"
-              label="Enter your message"
+              id="password"
+              type="password"
+              label="Your Email"
               // variant="outlined"
               InputProps={{
-                inputProps: {},
                 style: {
                   fontFamily: '"Kanit", sans-serif',
                 },

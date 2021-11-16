@@ -20,8 +20,8 @@ import Head from 'next/head';
 // import Layout from '../hoc/Layout/Layout';
 const Layout = dynamic(() => import('../hoc/Layout/Layout'));
 
-// import authReducer from '../store/reducers/auth';
-const authReducer = dynamic(() => import('../store/reducers/auth'));
+import authReducer from '../store/reducers/auth';
+// const authReducer = dynamic(() => import('../store/reducers/auth'));
 
 // --------------------------------------------------------------
 

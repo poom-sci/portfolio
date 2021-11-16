@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const fetchClient = () => {
   const defaultOptions = {
-    baseURL: process.env.REACT_APP_API_PATH || 'https://grable-pro-default-rtdb.firebaseio.com',
+    baseURL: process.env.NEXT_PUBLIC_API_PATH,
   };
 
   // Create instance

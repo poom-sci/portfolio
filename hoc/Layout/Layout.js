@@ -15,6 +15,10 @@ class Layout extends Component {
     showSideDrawer: false,
   };
 
+  constructor(props) {
+    super(props);
+  }
+
   sideDrawerClosedHandler = () => {
     this.setState({ showSideDrawer: false });
   };
@@ -28,8 +32,12 @@ class Layout extends Component {
   render() {
     return (
       <React.Fragment>
-        <Toolbar isAuth={false} drawerToggleClicked={this.sideDrawerToggleHandler} />
-        <SideDrawer open={this.state.showSideDrawer} isAuth={false} closed={this.sideDrawerClosedHandler} />
+        <Toolbar isAuth={this.props.isAuthenticated} drawerToggleClicked={this.sideDrawerToggleHandler} />
+        <SideDrawer
+          open={this.state.showSideDrawer}
+          isAuth={this.props.isAuthenticated}
+          closed={this.sideDrawerClosedHandler}
+        />
         <div className={classes.Content}>{this.props.children}</div>
         <Footer />
         {/* <FacebookMessenger /> */}
@@ -40,7 +48,7 @@ class Layout extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    // isAuthenticated: state.auth.token !== null
+    isAuthenticated: state.auth.token !== null,
   };
 };
 
