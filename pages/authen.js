@@ -20,7 +20,7 @@ export default function Contact() {
         <Meta
           path="login"
           title="Poom Suchao-in: portfolio website"
-          keyword="Poom,Suchao-in,Poom Suchao-in,engineering,ภูมิ สุเชาว์อินทร์,จุฬา"
+          keyword="Poom Suchao-in,engineering,ภูมิ สุเชาว์อินทร์,จุฬา"
           description="Poom Suchao-in: portfolio website"
         />
       </Head>

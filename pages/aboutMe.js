@@ -23,7 +23,7 @@ class AboutUs extends Component {
           <Meta
             path="aboutMe"
             title="Poom Suchao-in: About Me"
-            keyword="Poom,Suchao-in,Poom Suchao-in,engineering,ภูมิ สุเชาว์อินทร์,จุฬา"
+            keyword="Poom Suchao-in,engineering,ภูมิ สุเชาว์อินทร์,จุฬา"
             description="Poom Suchao-in: portfolio website Get to know more about me"
           />
         </Head>
