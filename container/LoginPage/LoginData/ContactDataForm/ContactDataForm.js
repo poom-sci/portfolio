@@ -64,7 +64,7 @@ export default function ContactDataForm(props) {
               fullWidth
               id="email"
               type="email"
-              label="Your Number"
+              label="Your Email"
               // variant="outlined"
               InputProps={{
                 style: {
@@ -87,7 +87,7 @@ export default function ContactDataForm(props) {
               fullWidth
               id="password"
               type="password"
-              label="Your Email"
+              label="Your Password"
               // variant="outlined"
               InputProps={{
                 style: {
