@@ -5,7 +5,7 @@ import Spinner from '../../../components/UI/Spinner/Spinner';
 import axios from '../../../axios-orders';
 import withErrorHandler from '../../../hoc/withErrorHandler/withErrorHandler';
 
-// import ContactDataForm from './ContactDataForm/ContactDataForm';
+import ContactDataForm from './ContactDataForm/ContactDataForm';
 import Skeleton from '@mui/material/Skeleton';
 import Alert from '@mui/material/Alert';
 import AlertTitle from '@mui/material/AlertTitle';
@@ -16,13 +16,13 @@ import dynamic from 'next/dynamic';
 
 const emailjs = dynamic(() => import('emailjs-com'));
 
-const ContactDataForm = dynamic(() => import('./ContactDataForm/ContactDataForm'), {
-  return: (
-    <Skeleton variant="rectangular" width="100%">
-      <div style={{ height: '400px' }} />
-    </Skeleton>
-  ),
-});
+// const ContactDataForm = dynamic(() => import('./ContactDataForm/ContactDataForm'), {
+//   return: (
+//     <Skeleton variant="rectangular" width="100%">
+//       <div style={{ height: '400px' }} />
+//     </Skeleton>
+//   ),
+// });
 
 class ContactData extends Component {
   state = {
