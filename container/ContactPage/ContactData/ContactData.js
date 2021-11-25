@@ -10,11 +10,11 @@ import Skeleton from '@mui/material/Skeleton';
 import Alert from '@mui/material/Alert';
 import AlertTitle from '@mui/material/AlertTitle';
 
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 import dynamic from 'next/dynamic';
 
-const emailjs = dynamic(() => import('emailjs-com'));
+// const emailjs = dynamic(() => import('emailjs-com'));
 
 // const ContactDataForm = dynamic(() => import('./ContactDataForm/ContactDataForm'), {
 //   return: (

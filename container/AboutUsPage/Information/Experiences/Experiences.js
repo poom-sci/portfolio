@@ -77,7 +77,7 @@ export default function Education() {
         </div>
       </Paper>
       <Paper elevation={10} className={classes.Card}>
-        <img src="/page/aboutMe/experiences3.jpg" alt="experiences in tutoring" />{' '}
+        <img src="/page/aboutMe/experiences3.jpg" alt="experiences in tutoring" />
         <div className={[classes.subtitle, classes.right].join(' ')}>
           <Typography
             align="justify"
@@ -108,7 +108,7 @@ export default function Education() {
         </div>
       </Paper>
       <Paper elevation={10} className={classes.Card}>
-        <img src="/page/aboutMe/experiences4.jpg" alt="experiences in programing" />{' '}
+        <img src="/page/aboutMe/experiences4.jpg" alt="experiences in programing" />
         <div className={[classes.subtitle, classes.left].join(' ')}>
           <Typography
             align="justify"
