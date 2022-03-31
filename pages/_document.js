@@ -12,6 +12,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           {/* <script dangerouslySetInnerHTML={{ __html: this.renderSnippet() }} /> */}
+          <script async src="https://cdn.splitbee.io/sb.js"></script>
           <meta name="google-site-verification" content="CFJplFjLKydgWqcLRCBf6u9z_bHko_lV3p_aQ0v9l-A" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
